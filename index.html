@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-focus-outline">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <title>Home - Comfy House</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6179cc83eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- images preload -->
+    <style>
+      .preload-images {
+        background: url("./images/hero1.jpg") no-repeat -9999px -9999px,
+          url("./images/hero2.jpg") no-repeat -9999px -9999px,
+          url("./images/hero3.jpg") no-repeat -9999px -9999px,
+          url("./images/hero4.jpg") no-repeat -9999px -9999px;
+      }
+    </style>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="./images/logo2.svg" alt="store logo" class="home" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- menu -->
+    <div class="menu-overlay">
+      <div class="menu">
+        <span class="close-menu">
+          <i class="fas fa-times"></i>
+        </span>
+        <div class="menu-center">
+          <h2>menu</h2>
+          <ul class="menu-items">
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#" class="shop">Store</a></li>
+            <li><a href="#" class="about">Contact</a></li>
+          </ul>
+          <div class="user-interest">
+            <button class="banner-btn sign-up">
+              <i class="fas fa-user-plus"></i>
+              Sign Up
+            </button>
+            <button class="banner-btn sign-in">
+              <i class="fas fa-user"></i>
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of menu -->
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">
+          Make your house a home
+        </h1>
+        <a class="banner-btn shop">
+          Shop now
+        </a>
+      </div>
+      <div class="preload-images"></div>
+      <script src="slide.js"></script>
+    </header>
+    <!-- end of hero -->
+    <!-- products -->
+    <section class="products" id="shop">
+      <div class="section-title">
+        <h2>Our products</h2>
+      </div>
+      <div class="products-center">
+        <!-- product items -->
+      </div>
+      <div class="pagination">
+        <button class="prev banner-btn">Prev</button>
+        <button class="next banner-btn">Next</button>
+      </div>
+    </section>
+    <!-- end of products -->
+    <!-- contact -->
+    <div class="contact">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <div class="txtb">
+          <label>Full Name :</label>
+          <input type="text" name="" value="" placeholder="Enter Your Name" />
+        </div>
+        <div class="txtb">
+          <label>Email :</label>
+          <input type="email" name="" value="" placeholder="Enter Your Email" />
+        </div>
+        <div class="txtb">
+          <label>Phone Number :</label>
+          <input
+            type="text"
+            name=""
+            value=""
+            placeholder="Enter Your Phone Number"
+          />
+        </div>
+        <div class="txtb">
+          <label>Message :</label>
+          <textarea></textarea>
+        </div>
+        <a class="banner-btn btn">Send</a>
+      </div>
+    </div>
+    <!-- end of contact -->
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-times"></i>
+        </span>
+        <h2>your cart</h2>
+        <div class="cart-content">
+          <!-- cart items -->
+        </div>
+        <div class="cart-footer">
+          <h3>your total : £ <span class="cart-total">0</span></h3>
+          <div class="cart-buttons">
+            <button class="checkout banner-btn">Checkout</button>
+            <button class="clear-cart banner-btn">clear cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of cart -->
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!-- app-->
+    <script src="app.js"></script>
+  </body>
+</html>
